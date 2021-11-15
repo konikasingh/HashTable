@@ -7,7 +7,7 @@ namespace HashTable
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Hash Table Program!");
-            CountWordFrequency("To be or not to be said ok not to be said ok to");
+            CountWordFrequency("Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations");
             Console.ReadLine();
         }
         public static void CountWordFrequency(string sentence)

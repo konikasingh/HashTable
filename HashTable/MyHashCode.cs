@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HashTable
-{         
+{
     //described globally as it is used in multiple methods and classes
     public struct KeyValue<K, V>                                           //structure is used as a generics data type as it can hold any kind of data.
     {
-        public K Key { get; set; }                                         //key and value are the members of the class (structure)
+        public K Key { get; set; }
         public V Value { get; set; }
     }
     class MyHashCode<K, V>
@@ -29,7 +29,7 @@ namespace HashTable
             return Math.Abs(position);
         }
         public V get(K key)
-        { 
+        {
             int position = getArrayPosition(key);                          //gives us the postion of key value using hashing function
             LinkedList<KeyValue<K, V>> linkedlist = GetLinkedList(position);
             foreach (KeyValue<K, V> item in linkedlist)
